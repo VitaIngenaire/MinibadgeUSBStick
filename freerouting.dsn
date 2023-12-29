@@ -1,0 +1,238 @@
+(pcb C:\Users\Me\Documents\PCB Design\MiniBadge\MiniBadgeUSBmount\freerouting.dsn
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "(7.0.0)")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  199970 -107910  199905 -129150  135000 -128940  129530 -124870
+            117530 -124870  117530 -112870  129530 -112870  135070 -107880
+            199970 -107910)
+    )
+    (plane GND (polygon F.Cu 0  201070 -106500  114610 -106710  114250 -130730  201140 -130870
+            201070 -106500))
+    (via "Via[0-1]_800:400_um")
+    (rule
+      (width 300)
+      (clearance 152.5)
+      (clearance 152.5 (type default_smd))
+      (clearance 38.1 (type smd_smd))
+    )
+  )
+  (placement
+    (component MiniBadge:MiniBadge_Simple_NoEdges
+      (place MB1 156600.000000 -108285.000000 front 0.000000 (PN MiniBadge_Simple))
+      (place MB2 178460.000000 -108390.000000 front 0.000000 (PN MiniBadge_Simple))
+    )
+    (component "Connector_USB:CONN-USB-A-PCB-TRACES"
+      (place J1 117530.000000 -118870.000000 front -90.000000 (PN USB_A))
+    )
+    (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
+      (place R1 137080.000000 -110880.000000 front 0.000000 (PN 1K))
+      (place R2 136990.000000 -126810.000000 front 0.000000 (PN 2K))
+    )
+    (component Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm
+      (place C1 131130.000000 -118800.000000 front 0.000000 (PN C))
+    )
+  )
+  (library
+    (image MiniBadge:MiniBadge_Simple_NoEdges
+      (pin Round[A]Pad_1750_um 1 1270 -1270)
+      (pin Round[A]Pad_1750_um 2 3810 -1270)
+      (pin Round[A]Pad_1750_um 7 16510 -1270)
+      (pin Round[A]Pad_1750_um 8 19050 -1270)
+      (pin Round[A]Pad_1750_um 9 1270 -19050)
+      (pin Round[A]Pad_1750_um 10 3810 -19050)
+      (pin Round[A]Pad_1750_um 15 16510 -19050)
+      (pin Round[A]Pad_1750_um 16 19050 -19050)
+    )
+    (image "Connector_USB:CONN-USB-A-PCB-TRACES"
+      (outline (path signal 40.64  -6000 0  -6000 12000))
+      (outline (path signal 40.64  6000 12000  6000 0))
+      (outline (path signal 40.64  6000 0  -6000 0))
+      (outline (path signal 40.64  -6000 12000  -5000 12000))
+      (outline (path signal 40.64  -4500 12000  -4000 12000))
+      (outline (path signal 40.64  -3500 12000  -3000 12000))
+      (outline (path signal 40.64  -2500 12000  -2000 12000))
+      (outline (path signal 40.64  -1500 12000  -1000 12000))
+      (outline (path signal 40.64  -500 12000  0 12000))
+      (outline (path signal 40.64  500 12000  1000 12000))
+      (outline (path signal 40.64  1500 12000  2000 12000))
+      (outline (path signal 40.64  2500 12000  3000 12000))
+      (outline (path signal 40.64  3500 12000  4000 12000))
+      (outline (path signal 40.64  4500 12000  5000 12000))
+      (outline (path signal 40.64  5500 12000  6000 12000))
+      (pin Rect[T]Pad_1900x8000_um 1 3810 4900)
+      (pin Rect[T]Pad_2000x7500_um 2 1300 5150)
+      (pin Rect[T]Pad_2000x7500_um 3 -1300 5150)
+      (pin Rect[T]Pad_1900x8000_um 4 -3810 4900)
+    )
+    (image Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
+      (outline (path signal 120  1040 0  1810 0))
+      (outline (path signal 120  1810 1370  1810 -1370))
+      (outline (path signal 120  1810 -1370  8350 -1370))
+      (outline (path signal 120  8350 1370  1810 1370))
+      (outline (path signal 120  8350 -1370  8350 1370))
+      (outline (path signal 120  9120 0  8350 0))
+      (outline (path signal 50  -1050 1500  -1050 -1500))
+      (outline (path signal 50  -1050 -1500  11210 -1500))
+      (outline (path signal 50  11210 1500  -1050 1500))
+      (outline (path signal 50  11210 -1500  11210 1500))
+      (outline (path signal 100  0 0  1930 0))
+      (outline (path signal 100  1930 1250  1930 -1250))
+      (outline (path signal 100  1930 -1250  8230 -1250))
+      (outline (path signal 100  8230 1250  1930 1250))
+      (outline (path signal 100  8230 -1250  8230 1250))
+      (outline (path signal 100  10160 0  8230 0))
+      (pin Round[A]Pad_1600_um 1 0 0)
+      (pin Oval[A]Pad_1600x1600_um 2 10160 0)
+    )
+    (image Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm
+      (outline (path signal 120  -1370 2620  -1370 -2620))
+      (outline (path signal 120  -1370 2620  6370 2620))
+      (outline (path signal 120  -1370 -2620  6370 -2620))
+      (outline (path signal 120  6370 2620  6370 -2620))
+      (outline (path signal 50  -1500 2750  -1500 -2750))
+      (outline (path signal 50  -1500 -2750  6500 -2750))
+      (outline (path signal 50  6500 2750  -1500 2750))
+      (outline (path signal 50  6500 -2750  6500 2750))
+      (outline (path signal 100  -1250 2500  -1250 -2500))
+      (outline (path signal 100  -1250 -2500  6250 -2500))
+      (outline (path signal 100  6250 2500  -1250 2500))
+      (outline (path signal 100  6250 -2500  6250 2500))
+      (pin Round[A]Pad_2000_um 1 0 0)
+      (pin Round[A]Pad_2000_um 2 5000 0)
+    )
+    (padstack Round[A]Pad_1600_um
+      (shape (circle F.Cu 1600))
+      (shape (circle B.Cu 1600))
+      (attach off)
+    )
+    (padstack Round[A]Pad_1750_um
+      (shape (circle F.Cu 1750))
+      (shape (circle B.Cu 1750))
+      (attach off)
+    )
+    (padstack Round[A]Pad_2000_um
+      (shape (circle F.Cu 2000))
+      (shape (circle B.Cu 2000))
+      (attach off)
+    )
+    (padstack Oval[A]Pad_1600x1600_um
+      (shape (path F.Cu 1600  0 0  0 0))
+      (shape (path B.Cu 1600  0 0  0 0))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_2000x7500_um
+      (shape (rect F.Cu -1000 -3750 1000 3750))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_1900x8000_um
+      (shape (rect F.Cu -950 -4000 950 4000))
+      (attach off)
+    )
+    (padstack "Via[0-1]_800:400_um"
+      (shape (circle F.Cu 800))
+      (shape (circle B.Cu 800))
+      (attach off)
+    )
+  )
+  (network
+    (net +5V
+      (pins J1-1 R1-1 C1-1)
+    )
+    (net +3.3V
+      (pins MB1-7 MB1-15 MB2-7 MB2-15 R1-2 R2-2 C1-2)
+    )
+    (net "unconnected-(MB1-+VBATT-Pad1)"
+      (pins MB1-1)
+    )
+    (net GND
+      (pins MB1-2 MB1-8 MB1-16 J1-4 MB2-2 MB2-8 MB2-16 R2-1)
+    )
+    (net "unconnected-(MB1-CLK-Pad9)"
+      (pins MB1-9)
+    )
+    (net "unconnected-(MB1-NC-Pad10)"
+      (pins MB1-10)
+    )
+    (net "unconnected-(MB2-+VBATT-Pad1)"
+      (pins MB2-1)
+    )
+    (net "unconnected-(MB2-CLK-Pad9)"
+      (pins MB2-9)
+    )
+    (net "unconnected-(MB2-NC-Pad10)"
+      (pins MB2-10)
+    )
+    (net "unconnected-(J1-D--Pad2)"
+      (pins J1-2)
+    )
+    (net "unconnected-(J1-D+-Pad3)"
+      (pins J1-3)
+    )
+    (class kicad_default "" "unconnected-(J1-D+-Pad3)" "unconnected-(J1-D--Pad2)"
+      "unconnected-(MB1-+VBATT-Pad1)" "unconnected-(MB1-CLK-Pad9)" "unconnected-(MB1-NC-Pad10)"
+      "unconnected-(MB2-+VBATT-Pad1)" "unconnected-(MB2-CLK-Pad9)" "unconnected-(MB2-NC-Pad10)"
+      (circuit
+        (use_via Via[0-1]_800:400_um)
+      )
+      (rule
+        (width 300)
+        (clearance 152.5)
+      )
+    )
+    (class PowerRails +3.3V +5V GND
+      (circuit
+        (use_via Via[0-1]_800:400_um)
+      )
+      (rule
+        (width 300)
+        (clearance 152.5)
+      )
+    )
+  )
+  (wiring
+    (wire (path F.Cu 500  171785 -116735  173110 -118060)(net +3.3V)(type route))
+    (wire (path F.Cu 500  169845 -112820  171785 -114760  171785 -116735)(net +3.3V)(type route))
+    (wire (path F.Cu 500  169845 -112820  171785 -110880)(net +3.3V)(type route))
+    (wire (path F.Cu 500  149180 -112820  169845 -112820)(net +3.3V)(type route))
+    (wire (path F.Cu 500  147240 -110880  149180 -112820)(net +3.3V)(type route))
+    (wire (path F.Cu 500  182090 -118020  190450 -109660  194970 -109660)(net +3.3V)(type route))
+    (wire (path F.Cu 500  173125 -118045  173110 -118060)(net +3.3V)(type route))
+    (wire (path F.Cu 500  182115 -118045  173125 -118045)(net +3.3V)(type route))
+    (wire (path F.Cu 500  182115 -118045  182090 -118020)(net +3.3V)(type route))
+    (wire (path F.Cu 500  191510 -127440  182115 -118045)(net +3.3V)(type route))
+    (wire (path F.Cu 500  194970 -127440  191510 -127440)(net +3.3V)(type route))
+    (wire (path F.Cu 500  173110 -118060  173110 -127335)(net +3.3V)(type route))
+    (wire (path B.Cu 500  146048 -125708  146048 -126810)(net +3.3V)(type route))
+    (wire (path B.Cu 500  139230 -118890  146048 -125708)(net +3.3V)(type route))
+    (wire (path B.Cu 500  136220 -118890  139230 -118890)(net +3.3V)(type route))
+    (wire (path B.Cu 500  136130 -118800  136220 -118890)(net +3.3V)(type route))
+    (wire (path B.Cu 500  146138 -111982  146138 -110880)(net +3.3V)(type route))
+    (wire (path B.Cu 500  139230 -118890  146138 -111982)(net +3.3V)(type route))
+    (wire (path B.Cu 500  147240 -110880  146138 -110880)(net +3.3V)(type route))
+    (wire (path B.Cu 500  147150 -126810  146048 -126810)(net +3.3V)(type route))
+    (wire (path F.Cu 500  171785 -110880  173110 -109555)(net +3.3V)(type route))
+    (wire (path B.Cu 500  131130 -116830  137080 -110880)(net +5V)(type route))
+    (wire (path B.Cu 500  131130 -118800  131130 -116830)(net +5V)(type route))
+    (wire (path F.Cu 500  127250 -122680  122430 -122680)(net +5V)(type route))
+    (wire (path F.Cu 500  131130 -118800  127250 -122680)(net +5V)(type route))
+  )
+)

@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "SeeedXiaoFP")(type "KiCad")(uri "C:/Users/Me/Documents/PCB Design/OPL_Kicad_Library-master/Seeed Studio XIAO Series Library")(options "")(descr ""))
+  (lib (name "OPL_FP")(type "KiCad")(uri "C:/Users/Me/Documents/PCB Design/OPL_Kicad_Library-master")(options "")(descr ""))
+)
